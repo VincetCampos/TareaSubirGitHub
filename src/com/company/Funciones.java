@@ -10,15 +10,15 @@ public class Funciones {
 
     Scanner entrada = new Scanner(System.in);
 
-    public void crearCarro(Integer id, String marca){
+    public void crearCarro(){
         String ingreso;
 
         System.out.println("Ingrese el id del carro");
         ingreso = entrada.nextLine();
-        id = Integer.parseInt(ingreso);
+        int id = Integer.parseInt(ingreso);
         System.out.println("Ingrese la marca del Carro");
         ingreso = entrada.nextLine();
-        marca = ingreso;
+        String marca = ingreso;
 
         listaCarros.put(id, marca);
 
