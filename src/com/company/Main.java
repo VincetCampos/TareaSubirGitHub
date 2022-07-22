@@ -28,13 +28,16 @@ public class Main {
 
             }else if(selec.equals("3")){
                 funciones.borrarCarro();
+            }else{
+                System.out.println("No existe esa opcion");
             }
 
             System.out.println("Desea realizar una nueva accion?");
             System.out.println("1. Si");
-            System.out.println("2. No");
+            System.out.println("Presione otra tecla para salir");
             selec = ent.nextLine();
         }while(selec.equals("1"));
 
+        System.out.println("Hasta la otra");
     }
 }
