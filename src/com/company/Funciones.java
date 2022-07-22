@@ -29,4 +29,11 @@ public class Funciones {
             System.out.println("id del carro : " + key + " marca del carro: " + listaCarros.get(key));
         }
     }
+
+    public void borrarCarro(){
+        System.out.println("ingrese el id del auto");
+        String ingreso = entrada.nextLine();
+        int idStr = Integer.parseInt(ingreso);
+        listaCarros.remove(idStr);
+    }
 }

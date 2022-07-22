@@ -17,6 +17,7 @@ public class Main {
         do {
             System.out.println("1. Para ingresar un carro");
             System.out.println("2. Para ver los carros");
+            System.out.println("3. Para borrar carros");
             selec = ent.nextLine();
 
             if(selec.equals("1")){
@@ -24,12 +25,16 @@ public class Main {
 
             }else if(selec.equals("2")){
                 funciones.verCarro();
+
+            }else if(selec.equals("3")){
+                funciones.borrarCarro();
             }
 
             System.out.println("Desea realizar una nueva accion?");
             System.out.println("1. Si");
             System.out.println("2. No");
             selec = ent.nextLine();
-        }while (selec.equals("1"));
+        }while(selec.equals("1"));
+
     }
 }
