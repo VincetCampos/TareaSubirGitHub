@@ -23,4 +23,10 @@ public class Funciones {
         listaCarros.put(id, marca);
 
     }
+
+    public void verCarro(){
+        for (Integer key : listaCarros.keySet()) {
+            System.out.println("id del carro : " + key + " marca del carro: " + listaCarros.get(key));
+        }
+    }
 }
